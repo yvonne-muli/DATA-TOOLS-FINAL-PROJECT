@@ -19,16 +19,8 @@ ENROLLMENT:
 - course_id (FK → courses.course_id)
 - enrollment_date
 
-- ┌─────────────────┐                ┌─────────────────┐                ┌─────────────────┐
-│    STUDENTS     │                │   ENROLLMENT    │                │     COURSES     │
-├─────────────────┤                ├─────────────────┤                ├─────────────────┤
-│ student_id (PK) │◄───────────────┤ enrollment_id(PK)│──────────────►│ course_id (PK)  │
-│ first_name      │                │ student_id (FK) │                │ course_name     │
-│ last_name       │                │ course_id (FK)  │                │ credits         │
-│ email (UQ)      │                │ enrollment_date │                │                 │
-│ gender          │                │                 │                │                 │
-│ created_at      │                │                 │                │                 │
-└─────────────────┘                └─────────────────┘                └─────────────────┘
+<img width="1122" height="524" alt="image" src="https://github.com/user-attachments/assets/13f38198-d8eb-4e46-9190-c2e0e877bb48" />
+
 
 
 Relationship Details
